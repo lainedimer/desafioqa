@@ -25,7 +25,7 @@ Você deverá especificar todos os casos de testes para o processo de compra de 
 
 Esse é um evento de testes, então não se preocupe em colocar dados "sujos" nele. 
 
-Se precisar utilizar um cartão de crédito você pode utilizar `4242 4242 4242 4242` com CVV `400`, qualquer data e nome do cartão são válidos.
+Se precisar utilizar um cartão de crédito você pode utilizar `4242 4242 4242 4242` com CVV `400`, qualquer data no futuro e nome do cartão são válidos.
 
 Crie um diretório chamado `1_planejamento` e armazene os cenários/casos de teste nele
 
