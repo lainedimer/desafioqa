@@ -7,18 +7,10 @@ Para o planejamento dos testes realizei análises no site (https://evento.moblee
 
 Sobre o site
 
-1. Existem linguagens que podem ser selecionadas antes de iniciar o processo de compra, sendo:
-	a) Inglês;
-	b) Português;
-	c) Espanhol.
+1. Existem linguagens que podem ser selecionadas antes de iniciar o processo de compra, sendo: inglês, português e espanhol.
 Nos casos de testes utilizei a linguagem português, no entanto, pode ser necessário executar os casos de testes em cada linguagem para analisar exposição de conteúdo e funcionalidades.
 
-2. Existem caminhos diferentes que chegam no mesmo lugar, neste caso, na compra de ingressos. Sendo:
-	a) Botão “Inscreva-se”;
-	b) Botão “Garanta sua vaga”;
-	c) Botão “Compre o seu ingresso”;
-	d) Botão “Faça sua inscrição”.
-Para os casos de testes utilizei o botão “Inscreva-se” como caminho principal, todos botões devem apresentar o mesmo resultado, tendo em vista que possuem a mesma funcionalidade, no entanto, também pode ser necessário aplicar os casos de testes utilizando os botões alternativos.
+2. Existem caminhos diferentes que chegam no mesmo lugar, neste caso, na compra de ingressos. Sendo: botão “Inscreva-se”, botão “Garanta sua vaga”, botão “Compre o seu ingresso”, botão “Faça sua inscrição”. Para os casos de testes utilizei o botão “Inscreva-se” como caminho principal, todos botões devem apresentar o mesmo resultado, tendo em vista que possuem a mesma funcionalidade, no entanto, também pode ser necessário aplicar os casos de testes utilizando os botões alternativos.
 
 <b>Métodos</b>
 
@@ -26,15 +18,9 @@ Para os casos de testes utilizei o botão “Inscreva-se” como caminho princip
 
 2. Fluxos de navegação
 Para melhor compreensão sobre todos os possíveis casos de testes, sem a especificação de requisitos, realizei um levantamento descritivo de fluxos em uma especificação de caso de uso, levando em consideração:
-	a) Fluxo principal: Acessa por meio do botão “inscreva-se”, seleciona 1 ingresso pago, preenche todos os campos com informações 	válidas, realiza pagamento com cartão em 1X.
-	b) Fluxos alternativos:
-		Pode-se comprar ingressos por meio dos botões: “Garanta sua vaga”, “Compre o seu ingresso” e “Faça sua inscrição”.
-		Comprar ingressos pagos via boleto bancário.
-		Compra de ingressos pagos por estrangeiro.
-		Compra de ingressos gratuitos.
-		Aplicação do cupom de desconto.
-		Zerar o temporizador no preenchimento do formulário na compra do ingresso pago.
-		Zerar o temporizador no preenchimento do formulário na compra do ingresso gratuito.
+
+    1. Fluxo principal: Acessa por meio do botão “inscreva-se”, seleciona 1 ingresso pago, preenche todos os campos com informações válidas, realiza pagamento com cartão em 1X.
+    2. Fluxos alternativos: Pode-se comprar ingressos por meio dos botões: “Garanta sua vaga”, “Compre o seu ingresso” e “Faça sua inscrição”, comprar ingressos pagos via boleto bancário, compra de ingressos pagos por estrangeiro, compra de ingressos gratuitos, aplicação do cupom de desconto, zerar o temporizador no preenchimento do formulário na compra do ingresso pago, zerar o temporizador no preenchimento do formulário na compra do ingresso gratuito.
 
 O arquivo com a especificação de caso de uso está localizado no diretório `1_planejamento\CasoDeUso`.
 
@@ -49,22 +35,24 @@ Na planilha “Caso de testes” existe uma guia com todos os casos de testes ch
 
 # Desafio 2 - Execução dos testes
 
-1. Execução dos testes
+<b>1. Execução dos testes</b>
 
 Os testes foram executados seguindo a ordem dos casos de testes, os registros estão localizados no diretório `2_execucao\ExecucaoDosTestes`. A planilha de registro de execução contém duas guias, “Orientações” e “Relatório de execução”:
-	Orientações: Estão localizadas informações do produto testado e as siglas que utilizei com seu respectivo significado. 
+
+1. Orientações: Estão localizadas informações do produto testado e as siglas que utilizei com seu respectivo significado. 
 	
-	Relatório de execução: Contém todos os testes e resultado das execuções. A planilha está organizada da seguinte forma: código do 	 teste, o código do caso de teste, o nome, a data de execução, o executor, status (“passou”, “falhou” e “não executado”), quantidade de 		execuções, código do defeito (referência da planilha com registro de defeitos) e observações.
+2. Relatório de execução: Contém todos os testes e resultado das execuções. A planilha está organizada da seguinte forma: código do teste, o código do caso de teste, o nome, a data de execução, o executor, status (“passou”, “falhou” e “não executado”), quantidade de execuções, código do defeito (referência da planilha com registro de defeitos) e observações.
 
 Os defeitos/falhas encontradas na execução dos testes estão documentadas na planilha “Registro de defeitos” localizado no diretório `2_execucao\RegistoDeDefeitos`. A planilha contém três guias, “Orientações”, “Registro de defeitos” e “Informações Gerais”.
-	Orientações: Contém siglas que utilizei nos registros de defeitos e seu respectivo significado.
+
+1. Orientações: Contém siglas que utilizei nos registros de defeitos e seu respectivo significado.
 	
-	Registro de defeitos: Contém todos os defeitos encontrados e o passo a passo para reprodução. A planilha está organizadas da seguinte 		forma: Id do defeito (referenciado na planilha de execução de testes), código do caso de teste, descrição do problema, passo a passo, 		status (em aberto, corrigido), severidade (1,2,3,4), versão, data de abertura e data de fechamento.
-	
-	Informações gerais: Contém informações extraídas do registro de defeitos, tais como: Quantidade de testes planejados, aprovados,   		falhos e não executados, quantidade de defeitos por severidade e quantidade de defeitos por status. Servem para tirar conclusões dos 		testes, realizar melhorias nos que não apresentam eficiência, identificar módulos mais dificeis de testar e com dados representativos, 		pode-se realizar comparações e evolução das versões.
+2. Registro de defeitos: Contém todos os defeitos encontrados e o passo a passo para reprodução. A planilha está organizadas da seguinte forma: Id do defeito (referenciado na planilha de execução de testes), código do caso de teste, descrição do problema, passo a passo, status (em aberto, corrigido), severidade (1,2,3,4), versão, data de abertura e data de fechamento.
+
+3. Informações gerais: Contém informações extraídas do registro de defeitos, tais como: Quantidade de testes planejados, aprovados, falhos e não executados, quantidade de defeitos por severidade e quantidade de defeitos por status. Servem para tirar conclusões dos testes,realizar melhorias nos que não apresentam eficiência, identificar módulos mais dificeis de testar e com dados representativos,pode-se realizar comparações e evolução das versões.
 
 
-#Desafio 3: Automação
+# Desafio 3 - Automação
 
 Para realizar a automação dos testes foi utilizado o Selenium IDE, que é uma extensão para os navegadores Firefox e Chrome. É uma ferramenta de fácil utilização, que permite gravar os testes realizados e executa-los, normalmente usado em testes mais básicos, contudo, pode-se exportar o arquivo e incrementa-los. Na automação utilizei a extensão para o Chrome, o arquivo que contém as instruções de configuração, execução e o arquivo gerado pela ferramenta estão no diretório `3_automacao`.
  
